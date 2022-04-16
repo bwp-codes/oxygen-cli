@@ -1,5 +1,5 @@
 {
-	"name": "bwp-codes/oxygen-cli-commands",
+	"name": "bwp-codes/oxygen-cli",
 	"type": "wordpress-muplugin",
 	"license": "UNLICENSED",
 	"description": "CLI commands for Oxygen Builder",
