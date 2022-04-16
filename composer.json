@@ -1,0 +1,28 @@
+{
+	"name": "bwp-codes/oxygen-cli-commands",
+	"type": "project",
+	"license": "UNLICENSED",
+	"description": "CLI commands for Oxygen Builder",
+	"homepage": "https://bwp-codes.de",
+	"authors": [
+	  {
+		"name": "Henning Potthoff",
+		"email": "henning@bwp-codes.de",
+		"homepage": "https://bwp-codes.de"
+	  }
+	],
+	"repositories": [
+	],
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.6.0",
+		"wp-coding-standards/wpcs": "^2.3"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"\"./vendor/bin/phpcs\" --config-set installed_paths ./vendor/wp-coding-standards/wpcs"
+		],
+		"post-update-cmd": [
+			"\"./vendor/bin/phpcs\" --config-set installed_paths ./vendor/wp-coding-standards/wpcs"
+		]
+	}
+  }
