@@ -19,5 +19,8 @@ function is_cli_running() {
 }
 
 if ( is_cli_running() ) {
-	require_once plugin_dir_path( __FILE__ ) . '/commands/commands.php';
+	// Include command: wp oxygen css-cache.
+	require_once plugin_dir_path( __FILE__ ) . '/commands/class-oxygenregeneratecsscache.php';
+	// Include command: wp oxygen sign-shortcode.
+	require_once plugin_dir_path( __FILE__ ) . '/commands/class-oxygensignshortcode.php';
 }
