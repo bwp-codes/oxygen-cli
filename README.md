@@ -2,9 +2,20 @@
 
 :warning: :construction: Currently broken under Oxygen 3.9 :construction: :warning:
 
-## Usage
+## Usage via Composer
 
-Install as regular Wordpress mu-plugin or `composer require bwp-codes/oxygen-cli` for your Composer based Wordpress Setup (e.g. roots/bedrock).
+1. Add this repo to your composer.json under `repositories`:
+```
+"repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:bwp-codes/oxygen-cli.git",
+    },
+],
+...
+```
+
+2. run `composer require bwp-codes/oxygen-cli`.
 
 ## Available Commands
 
