@@ -17,6 +17,15 @@
 
 2. run `composer require bwp-codes/oxygen-cli`.
 
+## Install as regular / mu-plugin
+
+1. Download the current [Release](https://github.com/bwp-codes/oxygen-cli/releases)
+2. Regular Plugin: Place the zip into `/wp-content/plugins/`
+3. Must-Use Plugin: Place the zip into `/wp-content/mu-plugins/`
+4. Extract zip into folder and rename folder to oxygen-cli
+5. Activate Plugin in WP Backend
+
+
 ## Available Commands
 
 -   `wp oxygen sign-shortcodes` to sign shortcodes
