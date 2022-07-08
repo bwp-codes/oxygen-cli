@@ -29,8 +29,8 @@
 
 ## Available Commands
 
--   `wp oxygen sign-shortcodes` to sign shortcodes
--   `wp oxygen css-cache` to regenerate the CSS cache
+-   `wp oxygen sign-shortcode <post_type>` to sign shortcodes on specific post types.
+-   `wp oxygen css-cache` to regenerate the CSS cache.
 
 ### Credit
 
