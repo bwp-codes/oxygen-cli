@@ -1,7 +1,7 @@
 {
 	"name": "bwp-codes/oxygen-cli",
 	"type": "wordpress-plugin",
-	"license": "UNLICENSED",
+	"license": "GPL-3.0-or-later",
 	"description": "CLI commands for Oxygen Builder",
 	"homepage": "https://bwp-codes.de",
 	"authors": [
