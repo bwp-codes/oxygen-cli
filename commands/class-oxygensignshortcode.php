@@ -39,6 +39,7 @@ class OxygenSignShortcode extends WP_CLI_Command {
 
 			if ( !is_array( $pages ) or count( $pages ) == 0 ) {
 				WP_CLI::warning( "No posts found of type $type" );
+				continue;
 			}
 
 			$page_ids = array_map( function ( $page ) {
