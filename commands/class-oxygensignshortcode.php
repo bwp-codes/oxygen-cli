@@ -12,12 +12,12 @@ class OxygenSignShortcode extends WP_CLI_Command {
 	 * ## OPTIONS
 	 *
 	 * <post-type>...
-	 * : Specify the post types to sign the oxygen's shorcode.
+	 * : Specify the post types to sign the oxygen's shortcode.
 	 * 
 	 * ## EXAMPLES
 	 * 
-	 *    wp artifact oxygen-builder sign-shortcode page
-	 *    wp artifact oxygen-builder sign-shortcode page ct_template
+	 *    wp oxygen sign-shortcode page
+	 *    wp oxygen sign-shortcode page ct_template
 	 *
 	 * @when wp_loaded
 	 * @subcommand sign-shortcode
