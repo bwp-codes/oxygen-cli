@@ -2,18 +2,7 @@
 
 ## Usage via Composer
 
-1. Add this repo to your composer.json under `repositories`:
-```
-"repositories": [
-    {
-      "type": "git",
-      "url": "git@github.com:bwp-codes/oxygen-cli.git",
-    },
-],
-...
-```
-
-2. run `composer require bwp-codes/oxygen-cli`.
+1. run `composer require bwp-codes/oxygen-cli`.
 
 ## Install as regular / mu-plugin
 
