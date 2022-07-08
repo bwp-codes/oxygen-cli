@@ -48,6 +48,7 @@ class OxygenSignShortcode extends WP_CLI_Command {
 			WP_CLI::line( sprintf( "Found %d post(s) of type %s", count( $page_ids ), $type ) );
 	
 			$_REQUEST['page_ids'] = $page_ids;
+			$_REQUEST['index'] = NULL;
 			do {
 				$response = oxygen_vsb_sign_shortcodes( $type );
 				foreach ( $response['messages'] as $message ) {
