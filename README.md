@@ -1,6 +1,6 @@
 # WP CLI Commands for Oxygen Builder
 
-:warning: :construction: Currently broken under Oxygen 3.9 // Untested with 4.0 :construction: :warning:
+:warning: :construction: Currently untested under Oxygen 3.9 // Untested with 4.0 :construction: :warning:
 
 ## Usage via Composer
 
