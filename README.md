@@ -1,7 +1,5 @@
 # WP CLI Commands for Oxygen Builder
 
-:warning: :construction: Currently broken under Oxygen 3.9 // Untested with 4.0 :construction: :warning:
-
 ## Usage via Composer
 
 1. Add this repo to your composer.json under `repositories`:
@@ -25,6 +23,9 @@
 4. Extract zip into folder and rename folder to oxygen-cli
 5. Activate Plugin in WP Backend
 
+## Tested Oxygen versions
+- 4
+- 3.9
 
 ## Available Commands
 
