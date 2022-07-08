@@ -1,10 +1,30 @@
 # WP CLI Commands for Oxygen Builder
 
-:warning: :construction: Currently broken under Oxygen 3.9 :construction: :warning:
+:warning: :construction: Currently broken under Oxygen 3.9 // Untested with 4.0 :construction: :warning:
 
-## Usage
+## Usage via Composer
 
-Install as regular Wordpress mu-plugin or `composer require bwp-codes/oxygen-cli` for your Composer based Wordpress Setup (e.g. roots/bedrock).
+1. Add this repo to your composer.json under `repositories`:
+```
+"repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:bwp-codes/oxygen-cli.git",
+    },
+],
+...
+```
+
+2. run `composer require bwp-codes/oxygen-cli`.
+
+## Install as regular / mu-plugin
+
+1. Download the current [Release](https://github.com/bwp-codes/oxygen-cli/releases)
+2. Regular Plugin: Place the zip into `/wp-content/plugins/`
+3. Must-Use Plugin: Place the zip into `/wp-content/mu-plugins/`
+4. Extract zip into folder and rename folder to oxygen-cli
+5. Activate Plugin in WP Backend
+
 
 ## Available Commands
 
