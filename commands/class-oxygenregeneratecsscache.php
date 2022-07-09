@@ -46,6 +46,27 @@ class OxygenRegenerateCssCache extends WP_CLI_Command {
 			],
 		]);
 
+		/***
+		 * This is a fix to prevent partial CSS cache generation.
+		 * WP_CLI generates all page caches in a row while the official
+		 * way uses a new request through ajax each time.
+		 * Oxygen implements a mechanism that prevents default CSS of
+		 * elements to be included multiple times.
+		 * This fix ensure that default css are included in each page cache.
+		 */
+		global $oxygen_vsb_components;
+		foreach ($oxygen_vsb_components as $key => $component) {
+			add_filter('oxygen_id_styles_filter-'.$key, function($styles, $states, $selector ) use ($key) {
+				ob_start();
+				do_action("oxygen_id_styles_output-".$key);
+				$page_css = ob_get_clean();
+				if (strpos($styles, $page_css) !== FALSE) {
+					return $styles;
+				}
+				return $page_css . $styles;
+			}, 1, 3);
+		}
+
 		foreach ($query->posts as $post) {
 			$posts[] = $post->ID;
 		};
