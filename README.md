@@ -15,6 +15,7 @@
 ## Tested Oxygen versions
 - 4
 - 3.9
+- 3.8
 
 ## Available Commands
 
