@@ -1,10 +1,11 @@
 <?php
 /**
  * Plugin Name:  Oxygen CLI
- * Plugin URI:   https://github.com/artifact-modules/command
+ * Plugin URI:   https://github.com/bwp-codes/oxygen-cli
  * Description:  Collection of WP-CLI commands for Oxygen Builder (https://oxygenbuilder.com/).
- * Version:      0.0.3
+ * Version:      1.1.1
  * Author:       BWP Codes
+ * Contributors: https://github.com/bwp-codes/oxygen-cli/graphs/contributors
  * Author URI:   https://bwp-codes.de/
  * License:      MIT License
  *

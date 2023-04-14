@@ -15,6 +15,7 @@
 ## Tested Oxygen versions
 - 4
 - 3.9
+- 3.8
 
 ## Available Commands
 
@@ -23,4 +24,6 @@
 
 ### Credit
 
-WP CLI commands based on the work of https://github.com/artifact-modules/command (MIT license)
+WP CLI commands based on the original work of https://github.com/artifact-modules/command (MIT license)
+
+Huge thanks to [@mickaelperrin](https://github.com/mickaelperrin) for fixing crucial bugs and actually making things work! <3
