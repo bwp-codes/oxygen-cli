@@ -6,6 +6,26 @@
  */
 class OxygenRegenerateCssCache extends WP_CLI_Command {
 
+  
+	private function get_oxygen_version($plugin_file = 'oxygen/functions.php') {
+		// Define the full path to the plugin file
+		$plugin_path = WP_PLUGIN_DIR . '/' . $plugin_file;
+	
+		// Check if the file exists
+		if (!file_exists($plugin_path)) {
+			return false;
+		}
+	
+		// Read the file content
+		$file_content = file_get_contents($plugin_path);
+	
+		// Use regex to extract the version from the plugin header
+		if (preg_match('/^.*Version:\s*([^\s]+).*$/mi', $file_content, $matches)) {
+			return $matches[1];
+		}
+	
+		return false;
+	}
   /**
    * WP CLI entry method.
    *
@@ -52,12 +72,12 @@ class OxygenRegenerateCssCache extends WP_CLI_Command {
       'meta_query' => [
         'relation' => 'OR',
         [
-          'key'     => 'ct_builder_shortcodes',
+          'key'     => $this->get_oxygen_version() >= '4.8.3' ? '_ct_builder_shortcodes' : 'ct_builder_shortcodes',
           'value'   => '',
           'compare' => '!=',
         ],
         [
-          'key'     => 'ct_builder_json',
+          'key'     => $this->get_oxygen_version() >= '4.8.3' ? '_ct_builder_json' : 'ct_builder_json',
           'value'   => '',
           'compare' => '!=',
         ],
